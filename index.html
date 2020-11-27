@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400&display=swap');</style>
+    <link rel="shortcut icon" href="favicon.png"/>
+    <title>Movie List</title>
+</head>
+<body>
+
+    <div id="add-movie-wrapper">
+        <h2>Add your favourite movie</h2>
+        <form id="add-movie-form" action="">
+            <label for="text">Title</label>
+            <input type="text" id="movie-title">
+            <label for="text">Year</label>
+            <input type="text" id="movie-year">
+            <label for="text">IMDB Link</label>
+            <input type="text" id="movie-imdb">
+            <label for="text">Movie Poster</label>
+            <input type="text" id="movie-img">
+            <button type="button" id="add-movie-btn">Add to the list</button>
+        </form>
+    </div>
+    
+    <div id="movie-list">
+        <h2>Movie List</h2>
+        <ul id="movie-list-ul"></ul>
+
+        <h4>Select movie to see more details</h4>
+        <div id="movie-details">
+        </div>
+
+    </div>
+
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-firestore.js"></script>
+<script src="app.js"></script>
+  
+</body>
+</html>
